@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: security  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://192.168.1.109:3306/czdh_security?characterEncoding=utf8&serverTimezone=Asia/Shanghai    driver-class-name: com.mysql.cj.jdbc.Driver  zipkin:    enabled: true
+    base-url: http://192.168.1.109:9411
+  sleuth:    sampler:      probability: 1.0
+mybatis:  type-aliases-package: com.czdh.security.mapper
+  mapper-locations:  - classpath:static/mapper/*Mapper.xml
