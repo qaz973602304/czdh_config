@@ -4,11 +4,11 @@ spring:
   datasource:
     username: root
     password: root
-    url: jdbc:mysql://192.168.1.109:3306/czdh_security?characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://192.168.1.119:3306/czdh_security?characterEncoding=utf8&serverTimezone=Asia/Shanghai
     driver-class-name: com.mysql.cj.jdbc.Driver
   zipkin:
     enabled: true
-    base-url: http://192.168.1.109:9411
+    base-url: http://192.168.1.119:9411
   sleuth:
     sampler:
       probability: 1.0
